@@ -1,0 +1,158 @@
+﻿<Window x:Class="ObjectDynamic.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ObjectDynamic"
+        mc:Ignorable="d"
+        Title="Object &amp; Dynamic Practice"
+        Height="880" Width="880"
+        WindowStartupLocation="CenterScreen"
+        Background="#FFF5F9">
+
+    <Grid Margin="25">
+        <Border Background="White"
+                CornerRadius="20"
+                Padding="25"
+                BorderBrush="#F3C4D8"
+                BorderThickness="1">
+
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <StackPanel>
+                    <TextBlock Text="C# FUNDAMENTALS"
+                               FontSize="14"
+                               FontWeight="Bold"
+                               Foreground="#C2185B"
+                               HorizontalAlignment="Center"/>
+
+                    <TextBlock Text="Object &amp; Dynamic Practice"
+                               FontSize="28"
+                               FontWeight="Bold"
+                               Foreground="#880E4F"
+                               HorizontalAlignment="Center"
+                               Margin="0,8,0,5"/>
+
+                    <TextBlock Text="Explore C# data types interactively"
+                               FontSize="14"
+                               Foreground="#777777"
+                               HorizontalAlignment="Center"
+                               Margin="0,0,0,25"/>
+
+                    <Border Background="#FFF0F6"
+                            CornerRadius="12"
+                            Padding="18"
+                            Margin="0,0,0,15">
+                        <StackPanel>
+                            <TextBlock Text="01  OBJECT TYPE"
+                                       FontSize="18"
+                                       FontWeight="Bold"
+                                       Foreground="#AD1457"
+                                       Margin="0,0,0,12"/>
+
+                            <TextBlock Text="Enter a value"
+                                       FontWeight="SemiBold"
+                                       Margin="0,0,0,5"/>
+
+                            <TextBox x:Name="ObjectInput"
+                                     Height="38"
+                                     Padding="10"
+                                     FontSize="14"
+                                     Text="Hema"/>
+
+                            <Button Content="Display Object Value"
+                                    x:Name="ObjectButton"
+                                    Click="ObjectButton_Click"
+                                    Height="40"
+                                    Margin="0,12,0,0"
+                                    Background="#D81B60"
+                                    Foreground="White"
+                                    FontWeight="Bold"
+                                    BorderThickness="0"
+                                    Cursor="Hand"/>
+
+                            <TextBlock x:Name="ObjectResult"
+                                       Text="Result will appear here"
+                                       FontSize="14"
+                                       Foreground="#880E4F"
+                                       TextWrapping="Wrap"
+                                       Margin="0,12,0,0"/>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Background="#F8F0FF"
+                            CornerRadius="12"
+                            Padding="18"
+                            Margin="0,0,0,15">
+                        <StackPanel>
+                            <TextBlock Text="02  DYNAMIC TYPE"
+                                       FontSize="18"
+                                       FontWeight="Bold"
+                                       Foreground="#7B1FA2"
+                                       Margin="0,0,0,12"/>
+
+                            <TextBlock Text="Enter a value"
+                                       FontWeight="SemiBold"
+                                       Margin="0,0,0,5"/>
+
+                            <TextBox x:Name="DynamicInput"
+                                     Height="38"
+                                     Padding="10"
+                                     FontSize="14"
+                                     Text="100"/>
+
+                            <Button Content="Display Dynamic Value"
+                                    x:Name="DynamicButton"
+                                    Click="DynamicButton_Click"
+                                    Height="40"
+                                    Margin="0,12,0,0"
+                                    Background="#8E24AA"
+                                    Foreground="White"
+                                    FontWeight="Bold"
+                                    BorderThickness="0"
+                                    Cursor="Hand"/>
+
+                            <TextBlock x:Name="DynamicResult"
+                                       Text="Result will appear here"
+                                       FontSize="14"
+                                       Foreground="#6A1B9A"
+                                       TextWrapping="Wrap"
+                                       Margin="0,12,0,0"/>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Background="#FFF8E1"
+                            CornerRadius="12"
+                            Padding="18">
+                        <StackPanel>
+                            <TextBlock Text="03  KEY DIFFERENCE"
+                                       FontSize="18"
+                                       FontWeight="Bold"
+                                       Foreground="#8D6E00"
+                                       Margin="0,0,0,8"/>
+
+                            <TextBlock Text="object: Casting is needed for many operations."
+                                       TextWrapping="Wrap"
+                                       Margin="0,3"/>
+
+                            <TextBlock Text="dynamic: Type checking happens at runtime."
+                                       TextWrapping="Wrap"
+                                       Margin="0,3"/>
+
+                            <TextBlock Text="Both can store values of different types."
+                                       TextWrapping="Wrap"
+                                       Margin="0,3"/>
+                        </StackPanel>
+                    </Border>
+
+                    <TextBlock Text="C# Learning Project • Object &amp; Dynamic"
+                               Foreground="#999999"
+                               FontSize="12"
+                               HorizontalAlignment="Center"
+                               Margin="0,20,0,0"/>
+                </StackPanel>
+            </ScrollViewer>
+        </Border>
+    </Grid>
+</Window>
+
+    
